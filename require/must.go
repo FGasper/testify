@@ -1,4 +1,8 @@
-//go:build go1.18
+// This file uses generics, which require language version go1.18 or later.
+// The go.mod go directive is go1.17 so that testify keeps building on old
+// toolchains; a //go:build constraint can only raise the language version on
+// Go 1.21 and later, so that is the lowest version this file can be gated on.
+//go:build go1.21
 
 package require
 
